@@ -24,7 +24,7 @@ function visual_functions:watermark()
 	local h, m, s, mst = client.system_time()
 
 	local actual_time = ('%2d:%02d'):format(h, m) 
-  local get_name = panorama.loadstring([[ return MyPersonaAPI.GetName() ]])
+        local get_name = panorama.loadstring([[ return MyPersonaAPI.GetName() ]])
 
 	local hex = helpers.RGBtoHEX(col[1], col[2], col[3])
 
