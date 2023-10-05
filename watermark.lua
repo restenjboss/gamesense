@@ -37,7 +37,7 @@ function visual_functions:watermark()
 	local x, y = client.screen_size(), 15 + (-3)
 	x = x - w - 10
 
-  render_t.box(x - 5, y, w, h, 4, 255, 255, 255, 255)
+        render_t.box(x - 5, y, w, h, 4, 255, 255, 255, 255)
 
 	renderer.text(x+ w / 2 - 3, y + 8, 255, 255, 255, 255, 'c', 0, text)
 
