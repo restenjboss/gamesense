@@ -10,9 +10,6 @@ helpers = {
 local render_t.box = function(x, y, w , h, radius, r, g, b, a)
      renderer.rectangle(x+1, y+2, w-2, 2, 30, 30, 30, 255)
      renderer.rectangle(x, y+4, w, 15, 30, 30, 30, 255)
-     renderer.circle_outline(x+5, y+4, r, g, b, a, 4, 180, 0.25, 2)
-     renderer.circle_outline(x+w-5, y+4, r, g, b, a, 4, 270, 0.25, 2)
-     renderer.rectangle(x+5, y, w-10, 2, r, g, b, a)
      renderer.gradient(x, y+4, 2, 9+radius, r, g, b, a, r, g, b, 0, false)
      renderer.gradient(x+w-2, y+4, 2, 9+radius, r, g, b, a, r, g, b, 0, false)
 end
